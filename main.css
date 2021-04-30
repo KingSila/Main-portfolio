@@ -1,0 +1,78 @@
+body {
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+
+  .light-theme {
+    color: #000000;
+    background: #00FF00;
+  }
+  :root * {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  
+  body {
+      background: var(--bg);
+  }
+  
+  body {
+      background: var(--bg);
+  }
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+
+  .marquee {
+    width: 350px;
+    margin: 0 auto;
+    background:white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    color:black;
+    font-size:18px;
+}
+  .twitter-timeline {
+   
+    float: right;
+    margin-left: 5px;
+
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
